@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h2>Voice Chatbot</h2>
+            <div class="settings">
+                <label class="switch">
+                    <input type="checkbox" id="auto-listen" checked>
+                    <span class="slider round"></span>
+                    <span class="label">Auto Listen</span>
+                </label>
+            </div>
+        </div>
+        <div id="chat-box"></div>
+        <div class="input-container">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+            <button id="voice-button" onclick="toggleVoiceInput()">🎤</button>
+        </div>
+        <div id="status" class="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
